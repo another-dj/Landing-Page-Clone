@@ -1,0 +1,53 @@
+.languages {
+  display: flex;
+  width: auto;
+  justify-content: flex-end;
+  padding: 5px;
+}
+
+.languages img {
+  padding: 2px;
+}
+
+.theLogo {
+  display: flex;
+  align-items: center;
+}
+
+.topOfNav {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+}
+
+.theInput {
+  display: flex;
+  align-items: center;
+}
+
+.navList ul li {
+  list-style-type: none;
+  padding: 4px;
+}
+
+.navList ul li a {
+  text-decoration: none;
+}
+
+.navList ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navList {
+  width: auto;
+  background-color: rgb(41, 167, 216);
+}
+
+.leftList ul li a {
+  text-decoration: none;
+}
+
+.leftList ul li {
+  list-style-type: none;
+}

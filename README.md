@@ -1,4 +1,3 @@
-#Simbiotic Technical test
+# Simbiotic Technical test
 
-##Landing Page clone for Simbiotic
-
+## Landing Page clone for Simbiotic
