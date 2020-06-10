@@ -1,3 +1,7 @@
+.theBody {
+  display: flex;
+}
+
 .languages {
   display: flex;
   width: auto;
@@ -50,4 +54,68 @@
 
 .leftList ul li {
   list-style-type: none;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 10em;
+}
+
+.montra {
+  background-image: url("./Assets/Bitmap-8.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 20em;
+}
+
+.rightBody {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.titleOne {
+  color: white;
+  background-color: teal;
+  width: 12em;
+}
+
+.titleTwo {
+  color: white;
+  background-color: turquoise;
+  width: 48em;
+}
+
+.montraDescription {
+  width: 54em;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.destaques {
+  width: 12em;
+  color: white;
+  background-color: teal;
+}
+
+.card {
+  display: flex;
+  width: 54em;
+  justify-content: space-between;
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
