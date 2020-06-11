@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ASFAC</title>
   </head>
-  <body>
+  <body class="container">
     <header>
       <nav>
         <div class="languages">
@@ -22,49 +22,49 @@
             <input type="text" />
           </div>
         </div>
-        <div class="navList">
-          <ul>
-            <li><a href="#">INICIO</a></li>
-            <li><a href="#">SOBRE A ASFAC</a></li>
-            <li><a href="#">SERVIÇOS</a></li>
-            <li><a href="#">MEMBROS</a></li>
-            <li><a href="#">ESTATUTOS</a></li>
-            <li><a href="#">ORGANIGRAMA</a></li>
-            <li><a href="#">ÓRGÃOS SOCIAIS</a></li>
-          </ul>
-        </div>
+        <ul class="navList">
+          <li><a href="#">INICIO</a></li>
+          <li><a href="#">SOBRE A ASFAC</a></li>
+          <li><a href="#">SERVIÇOS</a></li>
+          <li><a href="#">MEMBROS</a></li>
+          <li><a href="#">ESTATUTOS</a></li>
+          <li><a href="#">ORGANIGRAMA</a></li>
+          <li><a href="#">ÓRGÃOS SOCIAIS</a></li>
+        </ul>
       </nav>
     </header>
     <div class="theBody">
       <div class="leftBody">
         <div class="leftList">
-          <ul>
-            <li><a href="#">Sector</a></li>
-            <li><a href="#">Codigo de Conduta</a></li>
-            <li><a href="#">Indicadores de Actividade</a></li>
-            <li><a href="#">Anúarios</a></li>
-            <li><a href="#">Legislação</a></li>
-            <li><a href="#">Prevenção de Fraude</a></li>
-            <li><a href="#">Eventos</a></li>
-            <li><a href="#">Sala de Imprensa</a></li>
-            <li><a href="#">Perguntas Frequentes</a></li>
-            <li><a href="#">Link's</a></li>
-            <li><a href="#">Contactos</a></li>
-          </ul>
+          <a href="#">Sector</a>
+          <a href="#">Codigo de Conduta</a>
+          <a href="#">Indicadores de Actividade</a>
+          <a href="#">Anúarios</a>
+          <a href="#">Legislação</a>
+          <a href="#">Prevenção de Fraude</a>
+          <a href="#">Eventos</a>
+          <a href="#">Sala de Imprensa</a>
+          <a href="#">Perguntas Frequentes</a>
+          <a href="#">Link's</a>
+          <a href="#">Contactos</a>
         </div>
-        <div class="eduFin">
-          <h4>EDUCAÇÃO FINANCEIRA</h4>
+        <div class="leftCard">
+          <h4>EDUCAÇÃO <b>FINANCEIRA</b></h4>
           <img src="./Assets/Bitmap-23.png" alt="edu" />
+          <button>SABER MAIS +</button>
         </div>
-        <div class="portal">
-          <h4>PORTAL DE FORMAÇÃO A DISTÂNCIA DA ASFAC</h4>
+        <div class="leftCard">
+          <h4>PORTAL DE FORMAÇÃO A DISTÂNCIA DA <b>ASFAC</b></h4>
           <img src="./Assets/Bitmap-29.png" alt="portal" />
+          <button>SABER MAIS +</button>
         </div>
-        <div class="news">
+        <div class="newsletter">
           <h4>NEWSLETTER</h4>
           <form class="form" action="/">
-            <input type="text" placeholder="Insira o seu nome" />
-            <input type="text" placeholder="Insira o seu E-mail" />
+            <div class="inputs">
+              <input type="text" placeholder=" Insira o seu nome" />
+              <input type="text" placeholder=" Insira o seu E-mail" />
+            </div>
             <button type="submit">ENVIAR</button>
           </form>
         </div>
@@ -72,22 +72,26 @@
 
       <div class="rightBody">
         <div class="montra">
-          <div class="titleOne">
-            <h2>ASFAC</h2>
-          </div>
-          <div class="titleTwo">
-            <h3>UM GRUPO COM OS MELHORES PARCEIROS DE NEGÓCIOS</h3>
-          </div>
+          <img src="./Assets/Bitmap-8.png" alt="shaking" />
+          <h2 class="titleOne">
+            ASFAC
+          </h2>
+          <h3 class="titleTwo">
+            UM GRUPO COM OS MELHORES PARCEIROS DE NEGÓCIOS
+          </h3>
         </div>
-        <div class="montraDescription">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea eius
-            autem repudiandae, libero quibusdam voluptatem officiis ex neque
-            beatae rem incidunt ducimus nihil. Nesciunt molestias quo vitae,
-            odio placeat voluptate.
-          </p>
-        </div>
-        <div class="destaques"><h3>Destaques</h3></div>
+        <p class="montraDescription">
+          A ASFAC - Associação de Instituições de Crédito Especializado é a
+          organização representativa do sector do financiamento especializado ao
+          consumo, contando com 31 membros, dos quais 25 instituições de crédito
+          especializadas no financiamento ao consumo na sua maioria IFIC, que no
+          seu conjunto constituem a quase totalidade do mercado.<br />
+          Fundada em 1991, com 17 associadas, a ASFAC tem desenvolvido um
+          trabalho progressivo de profissionalização dos seus serviços, com o
+          objectivo de defender os interesses específicos do crédito ao consumo
+          no mercado português.
+        </p>
+        <h3 class="destaques">Em Destaque</h3>
         <div class="cards">
           <div class="card">
             <div class="cardText">
@@ -99,12 +103,40 @@
                 forma de crédito a fornecedores, o que representa uma subida de
                 15,8%
               </p>
-              <button>+</button>
+              <div>
+                <button>
+                  <div>+</div>
+                  VER MAIS
+                </button>
+              </div>
             </div>
             <img
               class="cardImage"
               src="./Assets/Rectangle-35.png"
               alt="blackbox"
+            />
+          </div>
+          <div class="card">
+            <div class="cardText">
+              <h3>Protocolo ASFAC/Ginásio Clube Português</h3>
+              <p>
+                De acordo com os dados da ASFAC, o crédito ao consumo aumentou
+                17,2%, para os 665 milhões de euros, enquanto no crédito às
+                empresas foram concedidos 575 milhões de euros, a maioria na
+                forma de crédito a fornecedores, o que representa uma subida de
+                15,8%
+              </p>
+              <div>
+                <button>
+                  <div>+</div>
+                  VER MAIS
+                </button>
+              </div>
+            </div>
+            <img
+              class="cardImage"
+              src="./Assets/Bitmap-25.png"
+              alt="creditcards"
             />
           </div>
           <div class="card">
@@ -117,7 +149,12 @@
                 forma de crédito a fornecedores, o que representa uma subida de
                 15,8%
               </p>
-              <button>+</button>
+              <div>
+                <button>
+                  <div>+</div>
+                  VER MAIS
+                </button>
+              </div>
             </div>
             <img
               class="cardImage"
@@ -127,7 +164,7 @@
           </div>
           <div class="card">
             <div class="cardText">
-              <h3>Crédito ao consumo mantém tendência de crescimento</h3>
+              <h3>Protocolo ASFAC/Ginásio Clube Português</h3>
               <p>
                 De acordo com os dados da ASFAC, o crédito ao consumo aumentou
                 17,2%, para os 665 milhões de euros, enquanto no crédito às
@@ -135,30 +172,17 @@
                 forma de crédito a fornecedores, o que representa uma subida de
                 15,8%
               </p>
-              <button>+</button>
+              <div>
+                <button>
+                  <div>+</div>
+                  VER MAIS
+                </button>
+              </div>
             </div>
             <img
               class="cardImage"
-              src="./Assets/Rectangle-35.png"
-              alt="blackbox"
-            />
-          </div>
-          <div class="card">
-            <div class="cardText">
-              <h3>Crédito ao consumo mantém tendência de crescimento</h3>
-              <p>
-                De acordo com os dados da ASFAC, o crédito ao consumo aumentou
-                17,2%, para os 665 milhões de euros, enquanto no crédito às
-                empresas foram concedidos 575 milhões de euros, a maioria na
-                forma de crédito a fornecedores, o que representa uma subida de
-                15,8%
-              </p>
-              <button>+</button>
-            </div>
-            <img
-              class="cardImage"
-              src="./Assets/Rectangle-35.png"
-              alt="blackbox"
+              src="./Assets/Bitmap-25.png"
+              alt="creditcards"
             />
           </div>
         </div>
