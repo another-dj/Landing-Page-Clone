@@ -1,5 +1,9 @@
 .container {
   margin: 0 2em;
+  background-image: url("./Assets/Bitmap.png");
+  background-repeat: no-repeat;
+  margin-right: 1%;
+  width: auto;
 }
 
 .theBody {
@@ -11,6 +15,7 @@
   width: auto;
   justify-content: flex-end;
   padding: 5px;
+  padding-bottom: 0;
 }
 
 .languages img {
@@ -20,17 +25,32 @@
 .theLogo {
   display: flex;
   align-items: center;
+  width: 100%;
+}
+.theLogo h3 {
+  display: flex;
+  color: rgb(145, 144, 144);
+  margin-left: 1.5%;
+  width: 100%;
+  padding: 0;
+  opacity: 0.8;
 }
 
 .topOfNav {
   display: flex;
   width: auto;
   justify-content: space-between;
+  color: grey;
 }
 
 .theInput {
   display: flex;
   align-items: center;
+}
+.theInput input {
+  border: none;
+  padding: 3%;
+  width: 97%;
 }
 
 .navList a:hover {
@@ -45,6 +65,7 @@
   background-color: #027d9e;
   display: flex;
   justify-content: center;
+  border-right: 0.01px solid rgba(31, 29, 29, 0.151);
 }
 
 .navList {
@@ -53,6 +74,9 @@
   padding: 0;
   margin-bottom: 2%;
   border-bottom: 4px solid #41b3cd;
+}
+.navList a:first-child {
+  border-left: 0.01px solid rgba(31, 29, 29, 0.151);
 }
 
 .leftBody {
@@ -174,29 +198,40 @@
   flex-direction: column;
   flex: 1;
   padding: 2%;
+  padding-top: 0;
 }
 
 .titleOne {
   color: white;
   background-color: #027d9e;
-  width: 24%;
+  width: 18%;
   position: relative;
   z-index: 1;
   top: -35%;
   right: -2%;
   margin: 0;
   margin-bottom: 0.5%;
+  margin-left: 0.8%;
+  font-size: 2.7em;
+  font-weight: 900;
+  padding: 0.5%;
+  padding-left: 1.5%;
 }
 
 .titleTwo {
   color: white;
   background-color: #41b3cd;
-  width: 82%;
+  width: 75%;
   position: relative;
   z-index: 1;
   top: -35%;
   right: -2%;
   margin: 0;
+  margin-left: 0.8%;
+  font-size: 1.35em;
+  font-weight: 550;
+  padding: 1%;
+  padding-left: 1.5%;
 }
 
 .montraDescription {
