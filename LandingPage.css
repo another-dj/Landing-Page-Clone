@@ -1,9 +1,12 @@
-.container {
-  margin: 0 2em;
+body {
   background-image: url("./Assets/Bitmap.png");
   background-repeat: no-repeat;
-  margin-right: 1%;
-  width: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.container {
+  margin-left: 15vw;
+  margin-right: 15vw;
 }
 
 .theBody {
@@ -14,7 +17,7 @@
   display: flex;
   width: auto;
   justify-content: flex-end;
-  padding: 5px;
+  padding: 5px 0;
   padding-bottom: 0;
 }
 
@@ -30,6 +33,7 @@
 .theLogo h3 {
   display: flex;
   color: rgb(145, 144, 144);
+  font-weight: normal;
   margin-left: 1.5%;
   width: 100%;
   padding: 0;
@@ -41,16 +45,28 @@
   width: auto;
   justify-content: space-between;
   color: grey;
+  margin-bottom: 2%;
 }
 
 .theInput {
   display: flex;
   align-items: center;
+  box-shadow: 1px 1px rgb(151, 150, 150);
+  margin: 3% 0;
+  width: 25vw;
+  height: fit-content;
 }
 .theInput input {
   border: none;
-  padding: 3%;
-  width: 97%;
+  padding: 6px 0;
+  width: 100%;
+}
+.theInput img {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 3px;
+  height: inherit;
 }
 
 .navList a:hover {
@@ -58,22 +74,31 @@
 }
 
 .navList a {
+  font-size: 0.8em;
+  font-weight: bold;
   text-decoration: none;
   color: white;
-  padding: 1.5%;
-  width: 100%;
+  padding: 1.5% 0;
+  flex: 1;
+  height: 18px;
   background-color: #027d9e;
   display: flex;
   justify-content: center;
-  border-right: 0.01px solid rgba(31, 29, 29, 0.151);
+  border-right: 0.05px solid rgba(31, 29, 29, 0.151);
+}
+
+nav {
+  background-color: #027d9e;
+  border-bottom: 4px solid #41b3cd;
+  height: fit-content;
+  margin-bottom: 2%;
 }
 
 .navList {
   display: flex;
-  justify-content: space-around;
+  flex: 1;
+  justify-content: space-evenly;
   padding: 0;
-  margin-bottom: 2%;
-  border-bottom: 4px solid #41b3cd;
 }
 .navList a:first-child {
   border-left: 0.01px solid rgba(31, 29, 29, 0.151);
@@ -82,7 +107,7 @@
 .leftBody {
   display: flex;
   flex-direction: column;
-  width: 18%;
+  width: 20%;
 }
 
 .leftBody h4 {
@@ -102,11 +127,12 @@
   width: 100%;
 }
 .leftList a {
+  font-size: 0.75em;
   text-decoration: none;
   padding: 5.5% 0 5.5% 5.5%;
   width: auto;
-  color: rgb(54, 52, 52);
-  font-weight: 600;
+  color: rgb(90, 87, 87);
+  font-weight: bold;
   border-bottom: 0.1px solid rgb(226, 226, 226);
   background-color: ghostwhite;
 }
@@ -191,6 +217,7 @@
 
 .montra img {
   border: 10px solid #41b3cd;
+  width: inherit;
 }
 
 .rightBody {
@@ -199,12 +226,13 @@
   flex: 1;
   padding: 2%;
   padding-top: 0;
+  padding-right: 0;
 }
 
 .titleOne {
   color: white;
   background-color: #027d9e;
-  width: 18%;
+  width: fit-content;
   position: relative;
   z-index: 1;
   top: -35%;
@@ -212,10 +240,10 @@
   margin: 0;
   margin-bottom: 0.5%;
   margin-left: 0.8%;
-  font-size: 2.7em;
+  font-size: 2em;
   font-weight: 900;
-  padding: 0.5%;
-  padding-left: 1.5%;
+  padding: 0.2% 1.5%;
+  padding-right: 4%;
 }
 
 .titleTwo {
@@ -228,7 +256,7 @@
   right: -2%;
   margin: 0;
   margin-left: 0.8%;
-  font-size: 1.35em;
+  font-size: 1em;
   font-weight: 550;
   padding: 1%;
   padding-left: 1.5%;
@@ -236,17 +264,19 @@
 
 .montraDescription {
   width: 100%;
-  margin-top: -4%;
+  margin-top: -80px;
+  font-size: 0.8em;
 }
 
 .destaques {
   color: white;
   background-color: #41b3cd;
   padding: 1.5%;
-  width: 12%;
+  width: 120px;
   display: flex;
   justify-content: center;
   margin-bottom: 0;
+  font-size: 0.8em;
 }
 
 .card {
@@ -254,6 +284,7 @@
   justify-content: space-between;
   border-bottom: 1px solid rgb(207, 204, 204);
   padding-bottom: 5px;
+  align-items: center;
 }
 .card:first-child {
   border-top: 3px solid #41b3cd;
@@ -265,13 +296,15 @@
 }
 
 .cardText p {
-  width: 82%;
+  width: 100%;
+  font-size: 0.8em;
 }
 
 .cardText h3 {
   color: #027d9e;
   font-weight: 900;
   margin-bottom: 0;
+  font-size: 0.8em;
 }
 
 .cardText button {
@@ -301,8 +334,8 @@
 }
 
 .card img {
-  width: 210px;
-  height: 135px;
+  width: 140px;
+  height: 90px;
   padding: 2%;
 }
 
@@ -316,29 +349,34 @@ footer {
 .topFooter a {
   text-decoration: none;
   color: white;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
 }
 .topFooter {
   display: flex;
-
   justify-content: flex-start;
-  border-bottom: 1px solid #41b3cd;
+}
+.topFooter div:last-child {
+  display: flex;
+  margin-left: 5%;
+  flex: 1;
 }
 
 .footerList {
   display: flex;
   flex-direction: column;
-  width: 15%;
-  margin-right: 3%;
+  width: 20%;
   padding-bottom: 1.5%;
 }
 
-.footerList:last-child {
-  padding-top: 5%;
+.theBigDiv div {
+  width: 40%;
 }
 
 .bottomFooter {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .theLine {
   display: flex;
@@ -358,4 +396,8 @@ footer {
 
 .last p {
   opacity: 0.3;
+}
+
+.theLastLine {
+  border-top: 1px solid #41b3cd;
 }
